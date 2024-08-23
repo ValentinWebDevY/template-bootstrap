@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: #212529;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  padding: 5rem 5rem;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  color: #6c757d;
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  color: #6c757d;
+  line-height: 1.75;
+}
+
+.disabled {
+  font-family: "Roboto Slab", serif;
+  color: #6c757d;
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+header {
+  background: url("assets/img/header-bg.jpg") center center/cover no-repeat;
+  height: 100dvh;
+  padding-top: 17rem;
+  padding-bottom: 12.5rem;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  z-index: 99999;
+}
+header nav img {
+  width: 11.668rem;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header nav ul li a:hover {
+  color: #ffc800;
+}
+header nav ul li:hover {
+  border-bottom: 2px solid #ffc800;
+}
+header .header-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-infos h3 {
+  font-size: 2.25rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+header .header-infos .btn {
+  color: white;
+  background-color: #ffc800;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+footer .socials-footer {
+  display: flex;
+  gap: 1rem;
+}
+footer .socials-footer a {
+  width: 2.5rem;
+}
+footer .footer-links a {
+  color: #212529;
+  padding: 0 0.5rem;
+}
+
+/* SERVICES */
+#services .all-services-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+#services .all-services-container .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#services .all-services-container .service .img-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc800;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+#services .all-services-container .service .img-service img {
+  width: 4.5rem;
+}
+#services .all-services-container .service p {
+  text-align: center;
+}
+
+/* END SERVICES */
+/* PORTFOLIO */
+#portfolio {
+  background-color: #F8F9FA;
+}
+#portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+#portfolio .portfolio-container .portfolio-item {
+  cursor: pointer;
+}
+#portfolio .portfolio-container .portfolio-item .portfolio-caption {
+  background-color: white;
+  padding: 1.5rem 0;
+}
+#portfolio .portfolio-container .portfolio-item .portfolio-caption-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#portfolio .portfolio-container .portfolio-item .portfolio-caption-subheading {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/* END PORTFOLIO */
+/* ABOUT */
+#about .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin-top: 4rem;
+  position: relative;
+}
+#about .timeline .element {
+  display: grid;
+  grid-template-columns: 1fr 190px 1fr;
+  align-items: center;
+}
+#about .timeline .element .content {
+  padding-left: 2.5rem;
+}
+#about .timeline .element img {
+  border-radius: 50%;
+  border: 7px solid #E9ECEF;
+  z-index: 1;
+}
+#about .timeline .element:nth-child(odd) {
+  text-align: right;
+}
+#about .timeline .element:nth-child(odd) .content {
+  padding-right: 2.5rem;
+}
+#about .timeline .last-element {
+  background-color: #ffc800;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid #E9ECEF;
+  z-index: 1;
+}
+#about .timeline .last-element h4 {
+  text-align: center;
+  padding-bottom: 0;
+  color: white;
+}
+#about .timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  height: auto;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #E9ECEF;
+}
+
+/* END ABOUT */
+/* TEAM */
+#team {
+  background-color: #F8F9FA;
+}
+#team .teams {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
+#team .teams .team-member {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+#team .teams .team-member .profile-pic-member {
+  border-radius: 50%;
+  border: 10px solid #E9ECEF;
+  width: 14rem;
+}
+#team .teams .team-member .member-name h4 {
+  padding-bottom: 0;
+}
+#team .teams .team-member .socials-team-member {
+  display: flex;
+  gap: 1rem;
+}
+#team .teams .team-member .socials-team-member a {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+#team p {
+  text-align: center;
+}
+
+/* END TEAM */
+/* LOGO MEDIA */
+#logo-media {
+  display: flex;
+  justify-content: space-around;
+}
+#logo-media img {
+  width: auto;
+  height: 2.75rem;
+}
+
+/* END LOGO MEDIA */
+/* CONTACT */
+#contact {
+  background: #212529 url("assets/img/map-image.png") no-repeat center;
+}
+#contact h2 {
+  color: white;
+}
+#contact .form-group .form-control {
+  padding: 1.25rem;
+}
+#contact .form-group textarea {
+  height: 15.313rem;
+}
+#contact .btn {
+  color: white;
+  background-color: #ffc800;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* END CONTACT */
+
+/*# sourceMappingURL=style.css.map */

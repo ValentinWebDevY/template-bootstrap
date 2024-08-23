@@ -1,0 +1,38 @@
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-pc: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin mX-screen ($size) {
+    @if ($size == "mobile") {
+      @media screen and (min-width: $breakpoint-mobile) { @content; }
+    } @else if($size == "tablet") {
+      @media screen and (min-width: $breakpoint-tablet) { @content; }
+    } @else if($size == "pc") {
+      @media screen and (min-width: $breakpoint-pc) { @content; }
+    } @else if($size == "xl") {
+      @media screen and (min-width: $breakpoint-xl) { @content; }
+    }
+}
+
+@mixin mX-flex-col-center () {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin mX-section-color ($color: #F8F9FA) {
+  background-color: $color;
+}
+
+@mixin  mX-border ($px, $color) {
+  border: $px solid $color;
+}
+
+@mixin mX-btn ($color: white, $bg-color: $yellow) {
+  color: $color;
+  background-color: $bg-color;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
